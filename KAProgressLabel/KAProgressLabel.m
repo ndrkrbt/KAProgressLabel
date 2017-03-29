@@ -116,7 +116,7 @@
         [self setStartDegree:0.0];
         [self setEndDegree:progress*360];
 
-        KAProgressLabel *__weak weakSelf = self;
+        KAProgressLabel * weakSelf = self;
         if(self.progressLabelVCBlock) {
             self.progressLabelVCBlock(weakSelf, progress);
         }
